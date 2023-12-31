@@ -15,10 +15,6 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v2
 
-    - name: Install Xcode Command Line Tools
-      run: |
-        xcode-select --install
-
     - name: Update Theos
       run: |
         bash -c “$(curl -fsSL https://raw.githubusercontent.com/roothide/theos/master/bin/install-theos)”
