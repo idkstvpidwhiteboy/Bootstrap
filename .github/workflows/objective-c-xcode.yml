@@ -16,8 +16,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Update Theos
-      run: |
-        bash -c “$(curl -fsSL https://raw.githubusercontent.com/roothide/theos/master/bin/install-theos)”
+      uses: Randomblock1/theos-action@v1
 
     - name: Build Bootstrap.tipa
       run: |
